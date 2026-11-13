@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10131c">
+  <title>Orbit — Calculator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="calculator" aria-label="Calculator">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Orbit home"><span class="brand-mark">◉</span><span>orbit<span class="brand-dot">.</span></span></a>
+      <span class="mode"><span class="mode-dot"></span> STANDARD</span>
+    </header>
+
+    <section class="display" aria-live="polite" aria-atomic="true">
+      <div class="expression" id="expression"></div>
+      <output class="result" id="result">0</output>
+    </section>
+
+    <section class="keypad" aria-label="Calculator keys">
+      <button class="key key-function" data-action="clear">AC</button>
+      <button class="key key-function" data-action="sign" aria-label="Change sign">+/−</button>
+      <button class="key key-function" data-action="percent">%</button>
+      <button class="key key-operator" data-operator="÷" aria-label="Divide">÷</button>
+
+      <button class="key" data-digit="7">7</button>
+      <button class="key" data-digit="8">8</button>
+      <button class="key" data-digit="9">9</button>
+      <button class="key key-operator" data-operator="×" aria-label="Multiply">×</button>
+
+      <button class="key" data-digit="4">4</button>
+      <button class="key" data-digit="5">5</button>
+      <button class="key" data-digit="6">6</button>
+      <button class="key key-operator" data-operator="−" aria-label="Subtract">−</button>
+
+      <button class="key" data-digit="1">1</button>
+      <button class="key" data-digit="2">2</button>
+      <button class="key" data-digit="3">3</button>
+      <button class="key key-operator" data-operator="+" aria-label="Add">+</button>
+
+      <button class="key key-wide" data-action="delete" aria-label="Delete last digit">⌫</button>
+      <button class="key" data-digit="0">0</button>
+      <button class="key" data-action="decimal" aria-label="Decimal point">.</button>
+      <button class="key key-equals" data-action="equals" aria-label="Equals">=</button>
+    </section>
+    <footer class="footer"><span>Simple math, in orbit.</span><span>⌨ Keyboard ready</span></footer>
+  </main>
+</body>
+</html>
